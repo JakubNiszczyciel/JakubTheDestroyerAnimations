@@ -1,0 +1,375 @@
+@-webkit-keyframes FadeInLeft-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@-moz-keyframes FadeInLeft-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@-o-keyframes FadeInLeft-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes FadeInLeft-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes FadeInRight-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@-moz-keyframes FadeInRight-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@-o-keyframes FadeInRight-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes FadeInRight-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@-webkit-keyframes FadeInTop-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-moz-keyframes FadeInTop-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-o-keyframes FadeInTop-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes FadeInTop-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes FadeInBottom-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-moz-keyframes FadeInBottom-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@-o-keyframes FadeInBottom-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+@keyframes FadeInBottom-aniamation {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.FadeInLeft {
+  animation: FadeInLeft-aniamation 0.8s ease;
+  animation-fill-mode: forwards;
+}
+
+.FadeInRight {
+  animation: FadeInRight-aniamation 0.8s ease;
+  animation-fill-mode: forwards;
+}
+
+.FadeInTop {
+  animation: FadeInTop-aniamation 0.8s ease;
+  animation-fill-mode: forwards;
+}
+
+.FadeInBottom {
+  animation: FadeInBottom-aniamation 0.8s ease;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes FadeOutLeft-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+    display: none;
+  }
+}
+@-moz-keyframes FadeOutLeft-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+    display: none;
+  }
+}
+@-o-keyframes FadeOutLeft-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+    display: none;
+  }
+}
+@keyframes FadeOutLeft-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+    display: none;
+  }
+}
+@-webkit-keyframes FadeOutRight-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(200px);
+    display: none;
+  }
+}
+@-moz-keyframes FadeOutRight-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(200px);
+    display: none;
+  }
+}
+@-o-keyframes FadeOutRight-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(200px);
+    display: none;
+  }
+}
+@keyframes FadeOutRight-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(200px);
+    display: none;
+  }
+}
+@-webkit-keyframes FadeOutTop-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px);
+    display: none;
+  }
+}
+@-moz-keyframes FadeOutTop-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px);
+    display: none;
+  }
+}
+@-o-keyframes FadeOutTop-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px);
+    display: none;
+  }
+}
+@keyframes FadeOutTop-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-200px);
+    display: none;
+  }
+}
+@-webkit-keyframes FadeOutBottom-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(200px);
+    display: none;
+  }
+}
+@-moz-keyframes FadeOutBottom-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(200px);
+    display: none;
+  }
+}
+@-o-keyframes FadeOutBottom-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(200px);
+    display: none;
+  }
+}
+@keyframes FadeOutBottom-aniamation {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(200px);
+    display: none;
+  }
+}
+.FadeOutLeft {
+  animation: FadeOutLeft-aniamation 0.8s ease;
+  animation-fill-mode: forwards;
+}
+
+.FadeOutRight {
+  animation: FadeOutRight-aniamation 0.8s ease;
+  animation-fill-mode: forwards;
+}
+
+.FadeOutTop {
+  animation: FadeOutTop-aniamation 0.8s ease;
+  animation-fill-mode: forwards;
+}
+
+.FadeOutBottom {
+  animation: FadeOutBottom-aniamation 0.8s ease;
+  animation-fill-mode: forwards;
+}
