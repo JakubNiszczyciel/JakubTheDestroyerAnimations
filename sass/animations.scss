@@ -40,6 +40,127 @@
 		transform: translateY(0px);
 	}
 }
+@include animate(FadeInBounceLeft-aniamation) {
+	0% {
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+	55%  {
+		transform: translateX(-50px);
+	}
+	85%  {
+		transform: translateX(-25px);
+	}
+	40%, 70%, 100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@include animate(FadeInBounceRight-aniamation) {
+	0% {
+		opacity: 0;
+		transform: translateX(200px);
+	}
+	55%  {
+		transform: translateX(50px);
+	}
+	85%  {
+		transform: translateX(25px);
+	}
+	40%, 70%, 100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@include animate(FadeInBounceTop-aniamation) {
+	0% {
+		opacity: 0;
+		transform: translateY(-200px);
+	}
+	55%  {
+		transform: translateY(-50px);
+	}
+	85%  {
+		transform: translateY(-25px);
+	}
+	40%, 70%, 100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@include animate(FadeInBounceBottom-aniamation) {
+	0% {
+		opacity: 0;
+		transform: translateY(200px);
+	}
+	55%  {
+		transform: translateY(50px);
+	}
+	85%  {
+		transform: translateY(25px);
+	}
+	40%, 70%, 100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@include animate(FadeInRotateLeftTop-aniamation) {
+	0% {
+		opacity: 0;
+		transform: rotate(-90deg) translateY(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+}
+@include animate(FadeInRotateLeftBottom-aniamation) {
+	0% {
+		opacity: 0;
+		transform: rotate(90deg) translateY(100%);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+}
+@include animate(FadeInRotateRightTop-aniamation) {
+	0% {
+		opacity: 0;
+		transform: rotate(90deg) translateY(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+}
+@include animate(FadeInRotateRightBottom-aniamation) {
+	0% {
+		opacity: 0;
+		transform: rotate(-90deg) translateY(100%);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // InAnimationsClasses
 .FadeInLeft {
 	animation: FadeInLeft-aniamation 0.8s ease;
@@ -57,6 +178,62 @@
 	animation: FadeInBottom-aniamation 0.8s ease;
 	animation-fill-mode: forwards;
 }
+.FadeInBounceLeft {
+	animation: FadeInBounceLeft-aniamation 0.8s ease-out;
+	animation-fill-mode: forwards;
+}
+.FadeInBounceRight {
+	animation: FadeInBounceRight-aniamation 0.8s ease-out;
+	animation-fill-mode: forwards;
+}
+.FadeInBounceTop {
+	animation: FadeInBounceTop-aniamation 0.8s ease-out;
+	animation-fill-mode: forwards;
+}
+.FadeInBounceBottom {
+	animation: FadeInBounceBottom-aniamation 0.8s ease-out;
+	animation-fill-mode: forwards;
+}
+.FadeInRotateLeftTop {
+	animation: FadeInRotateLeftTop-aniamation 0.8s ease-out;
+	animation-fill-mode: forwards;
+}
+.FadeInRotateLeftBottom {
+	animation: FadeInRotateLeftBottom-aniamation 0.8s ease-out;
+	animation-fill-mode: forwards;
+}
+.FadeInRotateRightTop {
+	animation: FadeInRotateRightTop-aniamation 0.8s ease-out;
+	animation-fill-mode: forwards;
+}
+.FadeInRotateRightBottom {
+	animation: FadeInRotateRightBottom-aniamation 0.8s ease-out;
+	animation-fill-mode: forwards;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // OutAnimations
 @include animate(FadeOutLeft-aniamation) {
 	0% {
@@ -106,6 +283,47 @@
 
 	}
 }
+@include animate(FadeOutRotateLeftTop-aniamation) {
+	0% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(-90deg) translateY(-100%);
+	}
+}
+@include animate(FadeOutRotateLeftBottom-aniamation) {
+	0% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(90deg) translateY(100%);
+	}
+}
+@include animate(FadeOutRotateRightTop-aniamation) {
+	0% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(90deg) translateY(-100%);
+	}
+}
+@include animate(FadeOutRotateRightBottom-aniamation) {
+	0% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(-90deg) translateY(100%);
+	}
+}
+
 // OutAnimationsClasses
 .FadeOutLeft {
 	animation: FadeOutLeft-aniamation 0.8s ease;
@@ -123,6 +341,23 @@
 	animation: FadeOutBottom-aniamation 0.8s ease;
 	animation-fill-mode: forwards;
 }
+.FadeOutRotateLeftTop {
+	animation: FadeOutRotateLeftTop-aniamation 0.8s ease-in;
+	animation-fill-mode: forwards;
+}
+.FadeOutRotateLeftBottom {
+	animation: FadeOutRotateLeftBottom-aniamation 0.8s ease-in;
+	animation-fill-mode: forwards;
+}
+.FadeOutRotateRightTop {
+	animation: FadeOutRotateRightTop-aniamation 0.8s ease-in;
+	animation-fill-mode: forwards;
+}
+.FadeOutRotateRightBottom {
+	animation: FadeOutRotateRightBottom-aniamation 0.8s ease-in;
+	animation-fill-mode: forwards;
+}
+
 
 
 
