@@ -154,13 +154,6 @@
 
 
 
-
-
-
-
-
-
-
 // InAnimationsClasses
 .FadeInLeft {
 	animation: FadeInLeft-aniamation 0.8s ease;
@@ -179,19 +172,19 @@
 	animation-fill-mode: forwards;
 }
 .FadeInBounceLeft {
-	animation: FadeInBounceLeft-aniamation 0.8s ease-out;
+	animation: FadeInBounceLeft-aniamation 0.8s ease-in;
 	animation-fill-mode: forwards;
 }
 .FadeInBounceRight {
-	animation: FadeInBounceRight-aniamation 0.8s ease-out;
+	animation: FadeInBounceRight-aniamation 0.8s ease-in;
 	animation-fill-mode: forwards;
 }
 .FadeInBounceTop {
-	animation: FadeInBounceTop-aniamation 0.8s ease-out;
+	animation: FadeInBounceTop-aniamation 0.8s ease-in;
 	animation-fill-mode: forwards;
 }
 .FadeInBounceBottom {
-	animation: FadeInBounceBottom-aniamation 0.8s ease-out;
+	animation: FadeInBounceBottom-aniamation 0.8s ease-in;
 	animation-fill-mode: forwards;
 }
 .FadeInRotateLeftTop {
