@@ -71,29 +71,32 @@ body {
 h2 {
   padding: 15px;
   font-size: 22px;
-  background: #717171;
   width: 120px;
   color: #fff;
   float: left;
   text-align: center;
   cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 h2.ActiveMenu {
-  background: #313131;
+  background: #ca1e1e;
 }
 
 #animations {
   width: 300px;
   background-color: #212121;
-  overflow: visible;
-  height: 100vh;
+  overflow: hidden;
   position: relative;
 }
 #animations ul {
   font-size: 15px;
   color: white;
-  position: absolute;
-  top: 52px;
+  position: relative;
+  top: 0px;
   left: 0px;
   width: 300px;
   background: #212121;
@@ -116,10 +119,13 @@ h2.ActiveMenu {
 #animations ul li.active {
   background: #414141;
 }
+#animations #OutAnimations {
+  position: absolute;
+  top: 52px;
+}
 
 #InAnimations.ActiveAnimations, #OutAnimations.ActiveAnimations {
   transform: translateX(0%);
-  display: block;
 }
 
 #InAnimations {
@@ -129,7 +135,6 @@ h2.ActiveMenu {
   -o-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  display: none;
 }
 
 #OutAnimations {
@@ -139,7 +144,6 @@ h2.ActiveMenu {
   -o-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  display: none;
 }
 
 #animation-wrapper {
