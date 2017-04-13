@@ -33,7 +33,7 @@ h2 {
 #animations {
 	width: 300px;
 	background-color: #212121;
-	overflow: hidden;
+	overflow:visible;
 	height: 100vh;
 	position: relative;
 	
@@ -67,14 +67,17 @@ h2 {
 }
 #InAnimations.ActiveAnimations, #OutAnimations.ActiveAnimations {
 	transform: translateX(0%);
+	display: block;
 }
 #InAnimations {
 	transform: translateX(-100%);
 	@include transition();
+	display: none;
 }
 #OutAnimations {
 	transform: translateX(100%);
 	@include transition();
+	display: none;
 }
 #animation-wrapper {
 	position:fixed;

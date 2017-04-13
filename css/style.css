@@ -85,7 +85,7 @@ h2.ActiveMenu {
 #animations {
   width: 300px;
   background-color: #212121;
-  overflow: hidden;
+  overflow: visible;
   height: 100vh;
   position: relative;
 }
@@ -119,6 +119,7 @@ h2.ActiveMenu {
 
 #InAnimations.ActiveAnimations, #OutAnimations.ActiveAnimations {
   transform: translateX(0%);
+  display: block;
 }
 
 #InAnimations {
@@ -128,6 +129,7 @@ h2.ActiveMenu {
   -o-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  display: none;
 }
 
 #OutAnimations {
@@ -137,6 +139,7 @@ h2.ActiveMenu {
   -o-transition: all 0.2s linear;
   -ms-transition: all 0.2s linear;
   transition: all 0.2s linear;
+  display: none;
 }
 
 #animation-wrapper {
