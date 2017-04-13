@@ -1,6 +1,6 @@
 @import "mixins";
 // InAnimations
-@include animate(FadeInLeft-aniamation) {
+@include animate(InFadeLeft-aniamation) {
 	0% {
 		opacity: 0;
 		transform: translateX(-200px);
@@ -10,7 +10,7 @@
 		transform: translateX(0px);
 	}
 }
-@include animate(FadeInRight-aniamation) {
+@include animate(InFadeRight-aniamation) {
 	0% {
 		opacity: 0;
 		transform: translateX(200px);
@@ -20,7 +20,7 @@
 		transform: translateX(0px);
 	}
 }
-@include animate(FadeInTop-aniamation) {
+@include animate(InFadeTop-aniamation) {
 	0% {
 		opacity: 0;
 		transform: translateY(-200px);
@@ -30,7 +30,7 @@
 		transform: translateY(0px);
 	}
 }
-@include animate(FadeInBottom-aniamation) {
+@include animate(InFadeBottom-aniamation) {
 	0% {
 		opacity: 0;
 		transform: translateY(200px);
@@ -40,25 +40,405 @@
 		transform: translateY(0px);
 	}
 }
+@include animate(InFadeBounceLeft-aniamation) {
+	0% {
+		opacity: 0;
+		transform: translateX(-200px);
+	}
+	55%  {
+		transform: translateX(-50px);
+	}
+	85%  {
+		transform: translateX(-25px);
+	}
+	40%, 70%, 100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@include animate(InFadeBounceRight-aniamation) {
+	0% {
+		opacity: 0;
+		transform: translateX(200px);
+	}
+	55%  {
+		transform: translateX(50px);
+	}
+	85%  {
+		transform: translateX(25px);
+	}
+	40%, 70%, 100% {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+@include animate(InFadeBounceTop-aniamation) {
+	0% {
+		opacity: 0;
+		transform: translateY(-200px);
+	}
+	55%  {
+		transform: translateY(-50px);
+	}
+	85%  {
+		transform: translateY(-25px);
+	}
+	40%, 70%, 100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@include animate(InFadeBounceBottom-aniamation) {
+	0% {
+		opacity: 0;
+		transform: translateY(200px);
+	}
+	55%  {
+		transform: translateY(50px);
+	}
+	85%  {
+		transform: translateY(25px);
+	}
+	40%, 70%, 100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+@include animate(InFadeRotateLeftTop-aniamation) {
+	0% {
+		opacity: 0;
+		transform: rotate(-90deg) translateY(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+}
+@include animate(InFadeRotateLeftBottom-aniamation) {
+	0% {
+		opacity: 0;
+		transform: rotate(90deg) translateY(100%);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+}
+@include animate(InFadeRotateRightTop-aniamation) {
+	0% {
+		opacity: 0;
+		transform: rotate(90deg) translateY(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+}
+@include animate(InFadeRotateRightBottom-aniamation) {
+	0% {
+		opacity: 0;
+		transform: rotate(-90deg) translateY(100%);
+	}
+	100% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+}
+@include animate(InRotate3dLeftBack-aniamation) {
+	0% {
+		transform: rotateY(90deg);
+	}
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+@include animate(InRotate3dRightBack-aniamation) {
+	0% {
+		transform: rotateY(-90deg);
+	}
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+@include animate(InRotate3dTopBack-aniamation) {
+	0% {
+		transform: rotateX(-90deg);
+	}
+	100% {
+		transform: rotateX(0deg);
+	}
+}
+@include animate(InRotate3dBottomBack-aniamation) {
+	0% {
+		transform: rotateX(90deg);
+	}
+	100% {
+		transform: rotateX(0deg);
+	}
+}
+@include animate(InRotate3dLeftFront-aniamation) {
+	0% {
+		transform: rotateY(-90deg);
+	}
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+@include animate(InRotate3dRightFront-aniamation) {
+	0% {
+		transform: rotateY(90deg);
+	}
+	100% {
+		transform: rotateY(0deg);
+	}
+}
+@include animate(InRotate3dTopFront-aniamation) {
+	0% {
+		transform: rotateX(90deg);
+	}
+	100% {
+		transform: rotateX(0deg);
+	}
+}
+@include animate(InRotate3dBottomFront-aniamation) {
+	0% {
+		transform: rotateX(-90deg);
+	}
+	100% {
+		transform: rotateX(0deg);
+	}
+}
+@include animate(InScaleWidth-aniamation) {
+	0% {
+		transform: scaleX(0);
+		color: #212121;
+	}
+	80% {
+		transform: scaleX(1);
+		color: #212121;
+	}
+	100% {
+		color: #fff;
+	}
+}
+@include animate(InScaleHeight-aniamation) {
+	0% {
+		transform: scaleY(0);
+		color: #212121;
+	}
+	80% {
+		transform: scaleY(1);
+		color: #212121;
+	}
+	100% {
+		color: #fff;
+	}
+}
+@include animate(InScale-aniamation) {
+	0% {
+		transform: scaleY(0) scaleX(0);
+		color: #212121;
+	}
+	80% {
+		transform: scaleY(1) scaleX(1);
+		color: #212121;
+	}
+	100% {
+		color: #fff;
+	}
+}
+@include animate(InScale2step-aniamation) {
+	0% {
+		transform: scaleY(0) scaleX(0.05);
+		color: #212121;
+	}
+	40% {
+		transform: scaleY(1) scaleX(0.05);
+		color: #212121;
+	}
+	80% {
+		transform: scaleY(1) scaleY(1);
+		color: #212121;
+	}
+	100% {
+		color: #fff;
+	}
+}
+
+
+
+
+
+
+
+
+
+
 // InAnimationsClasses
-.FadeInLeft {
-	animation: FadeInLeft-aniamation 0.8s ease;
+.InFadeLeft {
+	animation: InFadeLeft-aniamation 0.8s ease;
 	animation-fill-mode: forwards;
 }
-.FadeInRight {
-	animation: FadeInRight-aniamation 0.8s ease;
+.InFadeRight {
+	animation: InFadeRight-aniamation 0.8s ease;
 	animation-fill-mode: forwards;
 }
-.FadeInTop {
-	animation: FadeInTop-aniamation 0.8s ease;
+.InFadeTop {
+	animation: InFadeTop-aniamation 0.8s ease;
 	animation-fill-mode: forwards;
 }
-.FadeInBottom {
-	animation: FadeInBottom-aniamation 0.8s ease;
+.InFadeBottom {
+	animation: InFadeBottom-aniamation 0.8s ease;
 	animation-fill-mode: forwards;
 }
+.InFadeBounceLeft {
+	animation: InFadeBounceLeft-aniamation 0.8s ease-in;
+	animation-fill-mode: forwards;
+}
+.InFadeBounceRight {
+	animation: InFadeBounceRight-aniamation 0.8s ease-in;
+	animation-fill-mode: forwards;
+}
+.InFadeBounceTop {
+	animation: InFadeBounceTop-aniamation 0.8s ease-in;
+	animation-fill-mode: forwards;
+}
+.InFadeBounceBottom {
+	animation: InFadeBounceBottom-aniamation 0.8s ease-in;
+	animation-fill-mode: forwards;
+}
+.InFadeRotateLeftTop {
+	animation: InFadeRotateLeftTop-aniamation 0.8s ease-out;
+	animation-fill-mode: forwards;
+}
+.InFadeRotateLeftBottom {
+	animation: InFadeRotateLeftBottom-aniamation 0.8s ease-out;
+	animation-fill-mode: forwards;
+}
+.InFadeRotateRightTop {
+	animation: InFadeRotateRightTop-aniamation 0.8s ease-out;
+	animation-fill-mode: forwards;
+}
+.InFadeRotateRightBottom {
+	animation: InFadeRotateRightBottom-aniamation 0.8s ease-out;
+	animation-fill-mode: forwards;
+}
+.InRotate3dLeftBack {
+	animation: InRotate3dLeftBack-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: left;
+}
+.InRotate3dRightBack {
+	animation: InRotate3dRightBack-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: right;
+}
+.InRotate3dTopBack {
+	animation: InRotate3dTopBack-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: top;
+}
+.InRotate3dBottomBack {
+	animation: InRotate3dBottomBack-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: bottom;
+}
+.InRotate3dLeftFront{
+	animation: InRotate3dLeftFront-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: left;
+}
+.InRotate3dRightFront{
+	animation: InRotate3dRightFront-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: right;
+}
+.InRotate3dTopFront{
+	animation: InRotate3dTopFront-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: top;
+}
+.InRotate3dBottomFront{
+	animation: InRotate3dBottomFront-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: bottom;
+}
+.InScaleWidth{
+	animation: InScaleWidth-aniamation 1s ease;
+	animation-fill-mode: forwards;
+}
+.InScaleHeight{
+	animation: InScaleHeight-aniamation 1s ease;
+	animation-fill-mode: forwards;
+}
+.InScale{
+	animation: InScale-aniamation 1s ease;
+	animation-fill-mode: forwards;
+}
+.InScaleBottom{
+	animation: InScaleHeight-aniamation 1s ease;
+	animation-fill-mode: forwards;
+	transform-origin: bottom;
+}
+.InScaleTop{
+	animation: InScaleHeight-aniamation 1s ease;
+	animation-fill-mode: forwards;
+	transform-origin: top;
+}
+.InScaleLeft{
+	animation: InScaleWidth-aniamation 1s ease;
+	animation-fill-mode: forwards;
+	transform-origin: left;
+}
+.InScaleRight{
+	animation: InScaleWidth-aniamation 1s ease;
+	animation-fill-mode: forwards;
+	transform-origin: right;
+}
+.InScaleTopLeft{
+	animation: InScale2step-aniamation 1.3s ease;
+	animation-fill-mode: forwards;
+	transform-origin: top left;
+}
+.InScaleTopRight{
+	animation: InScale2step-aniamation 1.3s ease;
+	animation-fill-mode: forwards;
+	transform-origin: top right;
+}
+.InScaleBottomLeft{
+	animation: InScale2step-aniamation 1.3s ease;
+	animation-fill-mode: forwards;
+	transform-origin: bottom left;
+}
+.InScaleBottomRight{
+	animation: InScale2step-aniamation 1.3s ease;
+	animation-fill-mode: forwards;
+	transform-origin: bottom right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // OutAnimations
-@include animate(FadeOutLeft-aniamation) {
+@include animate(OutFadeLeft-aniamation) {
 	0% {
 		opacity: 1;
 		transform: translateX(0px);
@@ -69,7 +449,7 @@
 		display: none;
 	}
 }
-@include animate(FadeOutRight-aniamation) {
+@include animate(OutFadeRight-aniamation) {
 	0% {
 		opacity: 1;
 		transform: translateX(0px);
@@ -82,7 +462,7 @@
 
 	}
 }
-@include animate(FadeOutTop-aniamation) {
+@include animate(OutFadeTop-aniamation) {
 	0% {
 		opacity: 1;
 		transform: translateY(0px);
@@ -94,7 +474,7 @@
 
 	}
 }
-@include animate(FadeOutBottom-aniamation) {
+@include animate(OutFadeBottom-aniamation) {
 	0% {
 		opacity: 1;
 		transform: translateY(0px);
@@ -106,23 +486,288 @@
 
 	}
 }
+@include animate(OutFadeRotateLeftTop-aniamation) {
+	0% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(-90deg) translateY(-100%);
+	}
+}
+@include animate(OutFadeRotateLeftBottom-aniamation) {
+	0% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(90deg) translateY(100%);
+	}
+}
+@include animate(OutFadeRotateRightTop-aniamation) {
+	0% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(90deg) translateY(-100%);
+	}
+}
+@include animate(OutFadeRotateRightBottom-aniamation) {
+	0% {
+		opacity: 1;
+		transform: rotate(0deg)  translateY(0%);
+	}
+	100% {
+		opacity: 0;
+		transform: rotate(-90deg) translateY(100%);
+	}
+}
+@include animate(OutRotate3dLeftBack-aniamation) {
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(90deg);
+	}
+}
+@include animate(OutRotate3dRightBack-aniamation) {
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(-90deg);
+	}
+}
+@include animate(OutRotate3dTopBack-aniamation) {
+	0% {
+		transform: rotateX(0deg);
+	}
+	100% {
+		transform: rotateX(-90deg);
+	}
+}
+@include animate(OutRotate3dBottomBack-aniamation) {
+	0% {
+		transform: rotateX(0deg);
+	}
+	100% {
+		transform: rotateX(90deg);
+	}
+}
+@include animate(OutRotate3dLeftFront-aniamation) {
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(-90deg);
+	}
+}
+@include animate(OutRotate3dRightFront-aniamation) {
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(90deg);
+	}
+}
+@include animate(OutRotate3dTopFront-aniamation) {
+	0% {
+		transform: rotateX(0deg);
+	}
+	100% {
+		transform: rotateX(90deg);
+	}
+}
+@include animate(OutRotate3dBottomFront-aniamation) {
+	0% {
+		transform: rotateX(0deg);
+	}
+	100% {
+		transform: rotateX(-90deg);
+	}
+}
+@include animate(OutScaleWidth-aniamation) {
+	40% {
+		transform: scaleX(1);
+		color: #212121;
+	}
+	100% {
+		transform: scaleX(0);
+		color: #212121;
+	}
+}
+@include animate(OutScaleHeight-aniamation) {
+	40% {
+		transform: scaleY(1);
+		color: #212121;
+	}
+	100% {
+		transform: scaleY(0);
+		color: #212121;
+	}
+}
+@include animate(OutScale-aniamation) {
+	40% {
+		transform: scaleY(1) scaleX(1);
+		color: #212121;
+	}
+	100% {
+		transform: scaleY(0) scaleX(0);
+		color: #212121;
+	}
+}
+@include animate(OutScale2step-aniamation) {
+	20% {
+		color: #212121;
+		transform: scaleY(1) scaleX(1);
+	}
+	60% {
+		transform: scaleY(1) scaleX(0.05);
+		color: #212121;
+	}
+	100% {
+		transform: scaleY(0) scaleX(0.05);
+		color: #212121;
+	}
+}
+
+
+
+
+
+
+
+
 // OutAnimationsClasses
-.FadeOutLeft {
-	animation: FadeOutLeft-aniamation 0.8s ease;
+.OutFadeLeft {
+	animation: OutFadeLeft-aniamation 0.8s ease;
 	animation-fill-mode: forwards;
 }
-.FadeOutRight {
-	animation: FadeOutRight-aniamation 0.8s ease;
+.OutFadeRight {
+	animation: OutFadeRight-aniamation 0.8s ease;
 	animation-fill-mode: forwards;
 }
-.FadeOutTop {
-	animation: FadeOutTop-aniamation 0.8s ease;
+.OutFadeTop {
+	animation: OutFadeTop-aniamation 0.8s ease;
 	animation-fill-mode: forwards;
 }
-.FadeOutBottom {
-	animation: FadeOutBottom-aniamation 0.8s ease;
+.OutFadeBottom {
+	animation: OutFadeBottom-aniamation 0.8s ease;
 	animation-fill-mode: forwards;
 }
+.OutFadeRotateLeftTop {
+	animation: OutFadeRotateLeftTop-aniamation 0.8s ease-in;
+	animation-fill-mode: forwards;
+}
+.OutFadeRotateLeftBottom {
+	animation: OutFadeRotateLeftBottom-aniamation 0.8s ease-in;
+	animation-fill-mode: forwards;
+}
+.OutFadeRotateRightTop {
+	animation: OutFadeRotateRightTop-aniamation 0.8s ease-in;
+	animation-fill-mode: forwards;
+}
+.OutFadeRotateRightBottom {
+	animation: OutFadeRotateRightBottom-aniamation 0.8s ease-in;
+	animation-fill-mode: forwards;
+}
+.OutRotate3dLeftBack {
+	animation: OutRotate3dLeftBack-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: left;
+}
+.OutRotate3dRightBack {
+	animation: OutRotate3dRightBack-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: right;
+}
+.OutRotate3dTopBack {
+	animation: OutRotate3dTopBack-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: top;
+}
+.OutRotate3dBottomBack {
+	animation: OutRotate3dBottomBack-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: bottom;
+}
+.OutRotate3dLeftFront{
+	animation: OutRotate3dLeftFront-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: left;
+}
+.OutRotate3dRightFront{
+	animation: OutRotate3dRightFront-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: right;
+}
+.OutRotate3dTopFront{
+	animation: OutRotate3dTopFront-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: top;
+}
+.OutRotate3dBottomFront{
+	animation: OutRotate3dBottomFront-aniamation 0.5s ease-out;
+	animation-fill-mode: forwards;
+	transform-origin: bottom;
+}
+.OutScaleWidth{
+	animation: OutScaleWidth-aniamation 0.8s ease;
+	animation-fill-mode: forwards;
+}
+.OutScaleHeight{
+	animation: OutScaleHeight-aniamation 0.8s ease;
+	animation-fill-mode: forwards;
+}
+.OutScale{
+	animation: OutScale-aniamation 0.8s ease;
+	animation-fill-mode: forwards;
+}
+.OutScaleBottom{
+	animation: OutScaleHeight-aniamation 0.8s ease;
+	animation-fill-mode: forwards;
+	transform-origin: bottom;
+}
+.OutScaleTop{
+	animation: OutScaleHeight-aniamation 0.8s ease;
+	animation-fill-mode: forwards;
+	transform-origin: top;
+}
+.OutScaleLeft{
+	animation: OutScaleWidth-aniamation 0.8s ease;
+	animation-fill-mode: forwards;
+	transform-origin: left;
+}
+.OutScaleRight{
+	animation: OutScaleWidth-aniamation 0.8s ease;
+	animation-fill-mode: forwards;
+	transform-origin: right;
+}
+.OutScaleTopLeft{
+	animation: OutScale2step-aniamation 1.3s ease;
+	animation-fill-mode: forwards;
+	transform-origin: top left;
+}
+.OutScaleTopRight{
+	animation: OutScale2step-aniamation 1.3s ease;
+	animation-fill-mode: forwards;
+	transform-origin: top right;
+}
+.OutScaleBottomLeft{
+	animation: OutScale2step-aniamation 1.3s ease;
+	animation-fill-mode: forwards;
+	transform-origin: bottom left;
+}
+.OutScaleBottomRight{
+	animation: OutScale2step-aniamation 1.3s ease;
+	animation-fill-mode: forwards;
+	transform-origin: bottom right;
+}
+
 
 
 
